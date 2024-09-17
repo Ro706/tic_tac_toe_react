@@ -1,38 +1,82 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* General styles for the game */
+.game {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: flex-start;
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+/* Styles for the game board */
+.game-board {
+  margin-right: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.board-row {
+  display: flex;
+}
+
+/* Button styling for individual squares */
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: #f0f0f0;
+  border: 2px solid #999;
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 100px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the square buttons */
+.square:hover {
+  background-color: #ddd;
+}
+
+/* Status message (e.g., Next player or Winner) */
+.status {
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Game info section (for the move list) */
+.game-info {
+  margin-left: 20px;
+}
+
+.game-info ol {
+  padding-left: 30px;
+}
+
+.game-info button {
+  background-color: #fff;
+  border: 1px solid #999;
+  padding: 5px 10px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the buttons in the move list */
+.game-info button:hover {
+  background-color: #ddd;
+}
+.reset-button {
+  background-color: #ff4c4c;
+  color: rgb(7, 7, 7);
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.reset-button:hover {
+  color:#ff4c4c;
 }
